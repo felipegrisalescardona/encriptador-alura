@@ -1,7 +1,91 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --main-first-color: #2f1356;
+}
+main {
+  height: 100vh;
+}
 .logoMain {
   position: fixed;
   width: 68px;
   height: auto;
   top: 4%;
   left: 2%;
+}
+.inputText::placeholder {
+  color: var(--main-first-color);
+  opacity: 0.7;
+}
+/* Layout */
+.flexContainer-Main {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+}
+.textInput {
+  flex-grow: 3;
+  padding: 6%;
+}
+/* Input de texto */
+.inputText {
+  width: 100%;
+  resize: vertical;
+  font-size: 2rem;
+  border: none;
+  color: var(--main-first-color);
+  font-weight: bold;
+  resize: none;
+}
+.inputText:focus {
+  outline: none;
+}
+/* Aviso */
+.advice {
+  font-size: 0.8rem;
+}
+.advice::before {
+  content: url(images/exclamation.svg);
+  vertical-align: middle;
+  padding-right: 3px;
+}
+/* Botones */
+.butEncrypt {
+  background-color: var(--main-first-color);
+  padding: 1.5% 8%;
+  color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 1px solid var(--main-first-color);
+}
+.butEncrypt:hover {
+  background-color: #5d29a5;
+}
+.butDencrypt {
+  background-color: #d8dfe8;
+  padding: 1.5% 8%;
+  color: var(--main-first-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 1px solid var(--main-first-color);
+}
+.textDisplay {
+  margin: 3%;
+  border: solid 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.shibaImg {
+  width: 120px;
 }

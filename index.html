@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador Alura Challenge</title>
+    <link rel="stylesheet" href="resetcss.css">
     <link rel="stylesheet" href="mainstyles.css">
 </head>
 
@@ -14,24 +15,21 @@
             <h1>
                 <img class="logoMain" src="images/WakksLogo.svg" alt="Wakks logo">
             </h1>
-            <h2>
-                Encriptador de texto
-            </h2>
         </nav>
     </header>
     <main>
-        <div class="flexContainer Main">
+        <div class="flexContainer-Main">
             <div class="textInput">
-                <input type="text" placeholder="Ingresa el texto aquí!">
+                <textarea rows="12" maxlength="600" class="inputText" placeholder="Ingresa el texto aquí!"></textarea>
                 <div class="flexContainer">
                     <p class="advice">Sólo letras minúsculas y sin acentos.</p>
-                    <input type="button" value="Encriptar">
+                    <input type="button" class="butEncrypt" value="Encriptar">
                     <input type="button" class="butDencrypt" value="Desencriptar">
                 </div>
             </div>
             <div class="textDisplay flexContainer">
                 <div class="contentArea">
-                    <img src="images/Shiba-Question.png" alt="Perro mirando confundido">
+                    <img class="shibaImg" src="images/Shiba-Question.png" alt="Perro mirando confundido">
                     <h2>Ningún mensaje fue encontrado</h2>
                     <p>
                         Ingresa un texto que quieras encriptar o desencriptar.
