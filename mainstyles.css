@@ -38,6 +38,7 @@ main {
   color: var(--main-first-color);
   font-weight: bold;
   resize: none;
+  text-transform: lowercase;
 }
 .inputText:focus {
   outline: none;
@@ -62,9 +63,15 @@ main {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border: 1px solid var(--main-first-color);
+  transition: background-color 300ms ease-in-out;
+  -webkit-transition: background-color 300ms ease-in-out;
+  -moz-transition: background-color 300ms ease-in-out;
+  -ms-transition: background-color 300ms ease-in-out;
+  -o-transition: background-color 300ms ease-in-out;
 }
 .butEncrypt:hover {
   background-color: #5d29a5;
+  cursor: pointer;
 }
 .butDencrypt {
   background-color: #d8dfe8;
@@ -76,16 +83,66 @@ main {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border: 1px solid var(--main-first-color);
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  -webkit-transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
+  -moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  -ms-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  -o-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+.butDencrypt:hover {
+  cursor: pointer;
+  background-color: var(--main-first-color);
+  color: white;
 }
 .textDisplay {
   margin: 3%;
-  border: solid 20px;
   border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  box-shadow: 0px 24px 32px 8px #00000014;
 }
 .shibaImg {
   width: 120px;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.textDisplay > h2 {
+  font-size: 1.6rem;
+  padding: 10% 2% 3% 2%;
+  text-align: center;
+  width: 370px;
+  font-weight: bold;
+  color: var(--main-first-color);
+}
+.textDisplay > p {
+  text-align: center;
+  width: 300px;
+  padding-top: 7%;
+}
+.spacer {
+  flex-grow: 0.42;
+}
+.buttonArea > button {
+  background-color: #d8dfe8;
+  padding: 1rem 0;
+  width: 300px;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  -webkit-transition: color 300ms ease-in-out,
+    background-color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+.buttonArea > button:hover {
+  cursor: pointer;
+  background-color: var(--main-first-color);
+  color: white;
 }

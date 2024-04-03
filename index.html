@@ -21,22 +21,22 @@
         <div class="flexContainer-Main">
             <div class="textInput">
                 <textarea rows="12" maxlength="600" class="inputText" placeholder="Ingresa el texto aquí!"></textarea>
-                <div class="flexContainer">
+                <div>
                     <p class="advice">Sólo letras minúsculas y sin acentos.</p>
                     <input type="button" class="butEncrypt" value="Encriptar">
                     <input type="button" class="butDencrypt" value="Desencriptar">
                 </div>
             </div>
             <div class="textDisplay flexContainer">
-                <div class="contentArea">
-                    <img class="shibaImg" src="images/Shiba-Question.png" alt="Perro mirando confundido">
-                    <h2>Ningún mensaje fue encontrado</h2>
-                    <p>
-                        Ingresa un texto que quieras encriptar o desencriptar.
-                    </p>
-                </div>
+                <div class="spacer"></div>
+                <img class="shibaImg" src="images/Shiba-Question.png" alt="Perro mirando confundido">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+                <div class="spacer"></div>
                 <div class="buttonArea">
-                    <button>Copiar</button>
+                    <button id="copyButton">Copiar</button>
                 </div>
             </div>
         </div>
@@ -44,6 +44,7 @@
     <footer>
 
     </footer>
+    <script src="functions.js"></script>
 </body>
 
 </html>
