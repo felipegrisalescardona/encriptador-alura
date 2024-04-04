@@ -102,6 +102,11 @@ main {
 }
 .shibaImg {
   width: 120px;
+  transition: display 300ms ease-out;
+  -webkit-transition: display 300ms ease-out;
+  -moz-transition: display 300ms ease-out;
+  -ms-transition: display 300ms ease-out;
+  -o-transition: display 300ms ease-out;
 }
 .flexContainer {
   display: flex;
@@ -145,4 +150,11 @@ main {
   cursor: pointer;
   background-color: var(--main-first-color);
   color: white;
+}
+/* functionality */
+.hiding {
+  display: none;
+}
+.repadding {
+  padding: 0 37px;
 }
